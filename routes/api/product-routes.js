@@ -17,6 +17,19 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
+
+  Product.create({
+    product_name: req.body.product_name,
+    price: req.body.price,
+    stock: req.body.stock,
+    category_id: req.body.category_id,
+  })
+  .then((product) => {
+    res.json(product);
+  })
+  .catch((err) => {
+    res.json(err);
+  });
   /* req.body should look like this...
     {
       product_name: "Basketball",
