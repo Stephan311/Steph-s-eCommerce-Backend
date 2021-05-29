@@ -4,4 +4,4 @@ In this assignment, I created a backend for an eCommerce store that seems to sel
 
 Link to Github Repo:
 
-Screen Recording of Program functioning:
+Screen Recording of Program functioning: https://user-images.githubusercontent.com/76667667/120081444-bc798600-c08b-11eb-9899-05c8f19126bd.mp4 
