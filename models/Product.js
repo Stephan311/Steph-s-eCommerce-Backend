@@ -18,15 +18,19 @@ Product.init(
     product_name: {
       type: DataTypes.STRING,
       primaryKey: true,
+      allowNull: false,
     },
     price: {
-      type: DataTypes.DECIMAL
+      type: DataTypes.DECIMAL,
+      allowNull: false,
     },
     stock: {
       type: DataTypes.INTEGER,
+      allowNull: false,
     },
     catgory_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
        references: {
          model: 'category',
          key: 'id',
@@ -44,3 +48,4 @@ Product.init(
 );
 
 module.exports = Product;
+/////////////////////DO NOT ALLOW NULL - UPDATE!!!
